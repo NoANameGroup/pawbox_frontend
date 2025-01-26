@@ -1,3 +1,3 @@
-# your_own_huashi_frontend
+# electronic_pet_frontend
 
 This is a test!

@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.background {
+    width: 360px;
+    height: 640px;
+    opacity: 1;
+    background-color: rgba(112,158,221,1);
+    border-radius: 15px;
+}
+.welcome {
+    margin-left: 32px;
+    margin-top: 39px;
+    width: 187px;
+    height: 87px;
+    opacity: 1;
+}
+.welcome-en {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 52.13px;
+    color: rgba(255, 255, 255, 1);
+}
+.welcome-ch {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 34.75px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    vertical-align: top;
+}
+.login-background1 {
+    margin-left: 5px;
+    width: 336px;
+    height: 462px;
+    opacity: 1;
+    border-radius: 51.22px;
+    background: rgba(249, 249, 249, 1);
+}
+.login-background0 {
+    margin-left: 8px;
+    margin-top: 27px;
+    padding-top: 4px;
+    width: 346px;
+    height: 466px;
+    opacity: 1;
+    border-radius: 50px;
+    background: rgba(214, 228, 242, 1);
+}
+.mail-tip {
+    height: 18px;
+    margin-left: 24px;
+    display: flex;
+}
+.mail-pic {
+    height: 16px;
+    width: 16px;
+    margin-left: 3px;
+    margin-top: 55px;
+    padding-right: 3px;
+}
+.mail-word {
+    margin-top: 52px;
+    width: 57px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(46, 112, 208, 1);
+}
+.mail-input {
+    margin-top: 70px;
+    margin-left: 21px;
+    border: none;
+    width: 240px;
+    height: 18px;
+    background: rgba(249, 249, 249, 1);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+}
+hr {
+    width: 290px;
+    height: 0px;
+    opacity: 1;
+    border: 2px solid rgba(0, 0, 0, 0.38);
+    border-radius: 1px;
+}
+.password-pic {
+    height: 16px;
+    width: 16px;
+    margin-left: 3px;
+    margin-top: 25px;
+    padding-right: 3px;
+}
+.password-word {
+    margin-top: 22px;
+    width: 57px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(46, 112, 208, 1);
+}
+.password-input {
+    margin-top: 40px;
+    margin-left: 21px;
+    border: none;
+    width: 240px;
+    height: 18px;
+    background: rgba(249, 249, 249, 1);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+}
+.login {
+    margin-left: 48px;
+    margin-top: 55px;
+}
+.register {
+    margin-left: 48px;
+    margin-top: 26px;
+}
+.button {
+    width: 237px;
+    height: 42px;
+    opacity: 1;
+    border-radius: 9px;
+    background: rgba(157, 189, 231, 1);
+    box-shadow: 0px 8px 12px  rgba(157, 189, 231, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 26.06px;
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

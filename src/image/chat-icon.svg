@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91" fill="none">
+<circle cx="45.5" cy="45.5" r="45.5"   fill="#709EDD" >
+</circle>
+<circle cx="45" cy="45" r="40"   fill="#9DBDE7" >
+</circle>
+<path    stroke="rgba(255, 255, 255, 1)" stroke-width="2.2371859982581603"    d="M45.0022 23L45.0022 67.0043">
+</path>
+<path    stroke="rgba(255, 255, 255, 1)" stroke-width="2.2371859982581603"    d="M23 45.0022L67.0043 45.0022">
+</path>
+</svg>

@@ -1,0 +1,149 @@
+.container {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    background: rgba(54, 54, 54, 0.2);
+    border-radius: 15px;
+    z-index: 9996;
+}
+
+.pop-up-window {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+    width: 69%;
+    height: 21%;
+    opacity: 1;
+    border-radius: 20px;
+    z-index: 9998;
+}
+
+.open-button {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 47%;
+    width: 23%;
+    height: 6%;
+    border: 0cap;
+    opacity: 1;
+    border-radius: 9px;
+    background: rgba(157, 189, 231, 1);
+    box-shadow: 0px 3px 6px rgba(157, 189, 231, 0.6);
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 26.06px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+}
+
+.content-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 24%;
+    width: 70%;
+    height: 48%;
+    opacity: 1;
+    border-radius: 20px;
+    background: rgba(249, 249, 249, 0.8);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9997;
+}
+
+.content-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 48%;
+    width: 60%;
+    height: 40%;
+    opacity: 1;
+    border-radius: 20px;
+    background: rgba(249, 249, 249, 1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9997;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 17.38px;
+    color: rgba(46, 112, 208, 1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.close-icon {
+    position: absolute;
+    left: 83%;
+    top: 8%;
+    width: 16.57px;
+    height: 16.57px;
+    opacity: 1;
+}
+
+.content-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11%;
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    opacity: 1;
+    border-radius: 10px;
+    background: url(https://img.js.design/assets/smartFill/img264164da72e058.jpeg), rgba(204, 204, 204, 1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9997;
+}
+
+.inputcontent-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 48%;
+    width: 60%;
+    height: 25%;
+    border: 0cap;
+    opacity: 1;
+    border-radius: 20px;
+    background: rgba(249, 249, 249, 1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9997;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 17.38px;
+    color: rgba(46, 112, 208, 1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.send-button {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 85%;
+    width: 35%;
+    height: 10%;
+    border: 0cap;
+    opacity: 1;
+    border-radius: 9px;
+    background: rgba(157, 189, 231, 1);
+    box-shadow: 0px 3px 6px rgba(157, 189, 231, 0.6);
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 26.06px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    vertical-align: top;
+}

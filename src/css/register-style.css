@@ -1,14 +1,13 @@
 body {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 .background {
-    width: 360px;
-    height: 640px;
+    width: 100%;
     opacity: 1;
     background-color: rgba(112,158,221,1);
     border-radius: 15px;
+    height: 100vh;
 }
 .reg-word {
     margin-left: 32px;
@@ -26,22 +25,23 @@ body {
     vertical-align: top;
 }
 .bg0 {
-    margin-left: 8px;
-    margin-top: 16px;
-    padding-top: 4px;
+    margin-left: 2%;
+    margin-top: 4.5%;
+    padding-top: 2%;
     box-sizing: border-box;
-    width: 346px;
-    height: 529px;
+    width: 96%;
+    height: 82%;
     opacity: 1;
     border-radius: 56.28px;
     background: rgba(214, 228, 242, 1);
 }
 .bg1 {
-    margin-left: 5px;
-    width: 336px;
-    height: 520px;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 96%;
+    height: 98%;
     opacity: 1;
-    border-radius: 57.43px;
+    border-radius: 55px;
     background: rgba(249, 249, 249, 1);
 }
 .user-tip {
@@ -76,7 +76,7 @@ body {
 }
 hr {
     margin-top: 13px;
-    width: 290px;
+    width: 86%;
     height: 0px;
     opacity: 1;
     border: 2px solid rgba(0, 0, 0, 0.38);
@@ -138,9 +138,9 @@ hr {
     color: rgba(0, 0, 0, 0.3);
 }
 .reg-button {
-    margin-left: 48px;
-    margin-top: 50px;
-    width: 237px;
+    margin-left: 13.3%;
+    margin-top: 15%;
+    width: 74%;
     height: 42px;
     opacity: 1;
     border-radius: 9px;

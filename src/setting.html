@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>设置</title>
-    <link rel="stylesheet" href="css/设置-style.css">
+    <link rel="stylesheet" href="css/setting-style.css">
 </head>
 <body>
     <div class="bg">
@@ -13,11 +13,11 @@
             <div class="title">设置</div>
         </div>
         <div class="setting">
-            <div class="change user">
+            <div class="change user" id="change-user">
                 <img src="image/c-user-pic.png" class="c-user-pic">
                 <div class="change-word user-word">修改个人信息</div>
             </div>
-            <div class="change ani">
+            <div class="change ani" id="change-pet">
                 <img src="image/c-ani-pic.png" class="c-ani-pic">
                 <div class="change-word ani-word">修改宠物信息</div>
             </div>
@@ -30,9 +30,13 @@
     <div class="overlay" id="overlay">
         <div class="modal">
             <div class="modal-bg">
-                
+                <p>将宠物名字修改为：</p>
+                <input type="text" id="pet-name-input" placeholder="请输入新的宠物名字">
+                <hr>
+                <div id="confirm" class="confirm-button">确定</div>
             </div>
         </div>
     </div>
+<script src="js/setting-script.js"></script>
 </body>
 </html>

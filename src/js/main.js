@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Ìí¼ÓÌø×ªÂß¼­
-    addNavigation('home-icon', 'main.html');
-    addNavigation('boxin-icon', 'boxin.html');
+    // æ·»åŠ è·³è½¬é€»è¾‘
     addNavigation('user-icon', 'user.html');
+    addNavigation('boxin-icon', 'boxin.html');
+    addNavigation('boxout-icon', 'boxout.html');
     addNavigation('setting-icon', 'setting.html');
 });
 
@@ -13,6 +13,6 @@ function addNavigation(elementId, targetPage) {
             window.location.href = targetPage;
         });
     } else {
-        console.error(`ÕÒ²»µ½ ID Îª "${elementId}" µÄÔªËØ£¡`);
+        console.error(`æ‰¾ä¸åˆ° ID ä¸º "${elementId}" çš„å…ƒç´ ï¼`);
     }
 }

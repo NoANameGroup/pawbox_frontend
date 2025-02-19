@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawPet</title>
+    <title>发盒子界面</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/nav-boxout.css">
     <link rel="stylesheet" href="css/boxin_and_out.css">
+    <script src="js/boxout.js"></script>
 </head>
 
 <body>    
@@ -22,28 +23,23 @@
         <!-- 昵称框 -->
         <div class="name-container-outside">
             <div class="name-container-inside">
-                <div class="name-text">xxx</div>
+                <div class="name-text" id="name-text">xxx</div>
             </div>
         </div>
         <!-- 发盒子打开界面 -->
         <div class="content-container">
-            <img src="" alt="盒子图片内容" class="content-image">
-            <img src="image/close.svg" alt="关闭图标" class="close-icon">
+            <img src="" alt="盒子图片内容" class="content-image" id="inputcontent-image">
+            <img src="image/close.svg" alt="关闭图标" class="close-icon" id="close-icon">
             <textarea rows="5" cols="12" maxlength="60" wrap="soft" type="text" placeholder="请输入内容"
-                class="inputcontent-text"></textarea>
-            <button class="send-button">发送</button>
+                class="inputcontent-text" id="inputcontent-text"></textarea>
+            <button class="send-button" id="send-button">发送</button>
         </div>
         <!-- 底部按钮 -->
-        <img src="image/home-icon.svg" alt="主页图标" class="home-icon-clicked">
-        <img src="image/boxin-icon.svg" alt="收盒子图标" class="boxin-icon-clicked">
         <img src="image/boxout-icon.svg" alt="发盒子图标" class="boxout-icon-clicked">
-        <img src="image/user-icon.svg" alt="用户图标" class="user-icon-clicked">
-
         <img src="image/home2.png" alt="主页图标" class="home-icon">
         <img src="image/interface-align-front-square.png" alt="收盒子图标" class="boxin-icon">
         <img src="image/chat-icon.svg" alt="对话图标" class="chat-icon">
-        <img src="image/interface-align-front-square2.png" alt="发盒子图标" class="boxout-icon">
-        <img src="image/user.png" alt="个人图标" class="user-icon">
+        <img src="image/user2.png" alt="个人图标" class="user-icon">
         <img src="image/setting.png" alt="设置图标" class="setting-icon">
     </div>
 </body>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录界面</title>
     <link rel="stylesheet" href="css/login-style.css">
+    <script src="js/login.js"></script>
 </head>
 <body>
     <div class="background">
@@ -19,7 +20,7 @@
                         <img src="image/mail-send-envelope.png" class="mail-pic">
                         <div class="mail-word">邮箱</div>
                     </div>
-                    <input type="text" class="mail-input" placeholder="请输入邮箱">
+                    <input type="text" class="mail-input" placeholder="请输入邮箱" id="mail" cursor="text">
                 </div>
                 <hr>
                 <div class="password">
@@ -27,11 +28,11 @@
                         <img src="image/pw-key.png" class="password-pic">
                         <div class="password-word">密码</div>
                     </div>
-                    <input type="text" class="password-input" placeholder="请输入密码">
+                    <input type="text" class="password-input" placeholder="请输入密码" id="password" cursor="text" maxlength="20">
                 </div>
                 <hr>
-                <div class="login button">登录</div>
-                <div class="register button">注册新账号</div>
+                <div class="login button" onclick="login()" id="login-button">登录</div>
+                <div class="register button" id="register-button">注册新账号</div>
             </div>
         </div>
     </div>

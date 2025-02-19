@@ -1,0 +1,53 @@
+.home-icon {
+    position: fixed;
+    left: 12%;
+    bottom: 20px;
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.boxout-icon {
+    position: fixed;
+    right: 27%;
+    bottom: 20px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.user-icon {
+    position: fixed;
+    right: 12%;
+    bottom: 20px;
+    width: 22px;
+    height: 20px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.boxin-icon-clicked {
+    text-align: center;
+    position: fixed;
+    left: 25%;
+    bottom: 10px;
+    width: 39px;
+    height: 39px;
+    opacity: 1;
+    border-radius: 8px;
+    background: rgba(157, 189, 231, 1);
+}
+
+.chat-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    max-width: 90px;
+    opacity: 1;
+    z-index: 1000;
+}

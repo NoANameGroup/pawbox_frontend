@@ -124,6 +124,7 @@
     color: rgba(46, 112, 208, 1);
     text-align: left;
     vertical-align: top;
+    cursor: text;
 }
 
 .send-button {

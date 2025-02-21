@@ -12,6 +12,11 @@ function login() {
     // 模拟登录成功
     alert("欢迎回来，" + username + "！");
     // 在实际开发中，这里应该发送请求到后端进行登录验证
-        }
+}
 
-    //！！！以上代码为AI生成，需要修改！！！
+//！！！以上代码为AI生成，需要修改！！！
+
+const registerBtn = document.getElementById('register-button');
+registerBtn.addEventListener('click', () => {
+    window.location.href = 'register.html';
+});

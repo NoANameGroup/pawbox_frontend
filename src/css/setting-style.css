@@ -25,6 +25,7 @@ body {
     width: 15px;
     margin-top: 10px;
     margin-left: 0px;
+    cursor: pointer;
 }
 
 .title {
@@ -193,6 +194,7 @@ hr {
     align-items: center;
     justify-content: center;
     display: flex;
+    cursor: pointer;
 }
 
 .vector {
@@ -202,4 +204,5 @@ hr {
     margin-top: 16.5px;
     margin-right: 8px;
     right: 12%;
+    cursor: pointer;
 }

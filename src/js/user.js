@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Ìí¼ÓÌø×ªÂß¼­
     addNavigation('home-icon', 'main.html');
     addNavigation('boxin-icon', 'boxin.html');
     addNavigation('boxout-icon', 'boxout.html');
@@ -12,7 +11,6 @@ function addNavigation(elementId, targetPage) {
         element.addEventListener('click', () => {
             window.location.href = targetPage;
         });
-    } else {
-        console.error(`ÕÒ²»µ½ ID Îª "${elementId}" µÄÔªËØ£¡`);
+        console.error(`æ‰¾ä¸åˆ° ID ä¸º "${elementId}" çš„å…ƒç´ ï¼`);
     }
 }

@@ -137,4 +137,5 @@ hr {
     align-items: center;
     justify-content: center;
     display: flex;
+    cursor: pointer;
 }

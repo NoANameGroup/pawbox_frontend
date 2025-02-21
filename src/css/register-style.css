@@ -156,6 +156,7 @@ hr {
     align-items: center;
     justify-content: center;
     display: flex;
+    cursor: pointer;
 }
 .return {
     margin-left: 115px;
@@ -172,4 +173,5 @@ hr {
     color: rgba(46, 112, 208, 0.9);
     text-align: left;
     vertical-align: top;
+    cursor: pointer;
 }

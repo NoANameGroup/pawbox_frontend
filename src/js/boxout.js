@@ -1,18 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // 添加跳转逻辑
-    addNavigation('home-icon', 'main.html');
-    addNavigation('boxin-icon', 'boxin.html');
-    addNavigation('user-icon', 'user.html');
-    addNavigation('setting-icon', 'setting.html');
+const closebtn = document.getElementById('close-icon');
+closebtn.addEventListener('click', () => {
+    window.location.href = 'main.html';
 });
 
-function addNavigation(elementId, targetPage) {
-    const element = document.getElementById(elementId);
-    if (element) {
-        element.addEventListener('click', () => {
-            window.location.href = targetPage;
-        });
-    } else {
-        console.error(`找不到 ID 为 "${elementId}" 的元素！`);
-    }
-}
+const sendbtn = document.getElementById('send-button');
+sendbtn.addEventListener('click', () => {
+    alert("鎮ㄧ殑涓汉鐣岄潰宸叉洿鏂帮紒");
+    window.location.href = 'main.html';
+});

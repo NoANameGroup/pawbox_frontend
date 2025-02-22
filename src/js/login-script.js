@@ -26,15 +26,23 @@ LoginBtn.addEventListener('click', () => {
     .then (response => response.json())
     .then (result => {
         if (result.code === 200) {
-            // 操作成功
             alert('登录成功！');
-            window.location.href = 'main.html';
-        } else {
+            const petId = result.data.userId;
+            const url = 'http://eqmaster.redamancyxun.fun:8088/pet/get/${petId}'
+            fetch (url, {
+                method: 'GET',
+                headers: {'Content-Type': 'application/json'}
+            })
+                .then(result => {
+                    if (result.status === 403) { 
+                        window.location.href = 'name.html';
+                    } else {
+                        window.location.href = 'main.html';
+                    }
+                })
+            } else {
             // 操作失败
             alert('登录失败：' + result.message);
         }
     })
 });
-function login() {
-    
-}

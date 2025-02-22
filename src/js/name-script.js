@@ -17,11 +17,12 @@ start.addEventListener('click', () => {
     })
     .then (response => response.json())
     .then (result => {
-        if (result.success) {
-            alert ('起名成功');
-            window.location.href = 'main.html';
+        if (result.code === 200) {
+            // 操作成功
+            alert('起名成功！');
         } else {
-            alert ('起名失败：' + result.message);
+            // 操作失败
+            alert('起名失败：' + result.message);
         }
     })
 });

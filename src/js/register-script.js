@@ -17,20 +17,27 @@ RegisterBtn.addEventListener('click', () => {
         email: email,
         password: password
     }
-    fetch ('http://127.0.0.1:4523/m1/5871339-5557864-default/user/register', {
+    fetch ('http://eqmaster.redamancyxun.fun:8088/user/register', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify (regdata)
     })
     .then (response => response.json())
-    .then (result => {
-        if (result.success) {
-            alert ('注册成功');
-            window.location.href = 'name.html';
+    .then(result => {
+        if (result.code === 200) {
+            // 操作成功
+            alert('注册成功！');
+            window.location.href = 'login.html';
         } else {
-            alert ('注册失败：' + result.message);
+            // 操作失败
+            alert('注册失败：' + result.message);
         }
     })
+    .catch(error => {
+        // 捕获并处理网络错误
+        console.error('请求失败:', error);
+    })
+    
 });
 
 const tologinBtn = document.getElementById('login');

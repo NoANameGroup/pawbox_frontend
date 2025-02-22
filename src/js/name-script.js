@@ -10,7 +10,7 @@ start.addEventListener('click', () => {
     const petdata = {
         name: name
     }
-    fetch ('http://127.0.0.1:4523/m1/5871339-5557864-default/pet/adopt', {
+    fetch ('http://eqmaster.redamancyxun.fun:8088/pet/adopt', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify (petdata)

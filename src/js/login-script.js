@@ -4,8 +4,8 @@ registerBtn.addEventListener('click', () => {
 });
 const MailInput = document.getElementById("mail");
 const PasswordInput = document.getElementById ("password");
-
-function login() {
+const LoginBtn = document.getElementById ("login-button");
+LoginBtn.addEventListener('click', () => {
     const email = MailInput.value;
     const password = PasswordInput.value;
     MailInput.value = '';
@@ -18,18 +18,22 @@ function login() {
         email: email,
         password: password
     }
-    fetch ('http://127.0.0.1:4523/m1/5871339-5557864-default/user/login', {
+    fetch ('http://eqmaster.redamancyxun.fun:8088/user/login', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify (userdata)
     })
     .then (response => response.json())
     .then (result => {
-        if (result.success) {
-            alert ('登录成功');
-            window.location.href = 'main.html';
+        if (result.code === 200) {
+            // 操作成功
+            alert('登录成功！');
         } else {
-            alert ('登录失败：' + result.message);
+            // 操作失败
+            alert('登录失败：' + result.message);
         }
     })
+});
+function login() {
+    
 }

@@ -28,6 +28,7 @@ LoginBtn.addEventListener('click', () => {
         if (result.code === 200) {
             // 操作成功
             alert('登录成功！');
+            window.location.href = 'main.html';
         } else {
             // 操作失败
             alert('登录失败：' + result.message);

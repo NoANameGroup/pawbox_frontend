@@ -17,6 +17,31 @@ toggleButton.addEventListener('click', function () {
     popup2.style.display = 'block';
 });
 
+// 图片库
+const imageLibrary = [
+    "https://img.js.design/assets/smartFill/img410164da755928.jpg",
+    "https://img.js.design/assets/smartFill/img411164da755928.jpg",
+    "https://img.js.design/assets/smartFill/img278164da731af0.jpg",
+];
+
+// 获取 img 元素
+const imgElement = document.getElementById('content-image');
+
+// 页面加载完成后自动更换图片
+window.onload = function() {
+    changeImage();
+};
+
+// 随机更换图片
+function changeImage() {
+    // 随机选择一张图片
+    const randomIndex = Math.floor(Math.random() * imageLibrary.length);
+    const imageUrl = imageLibrary[randomIndex];
+
+    // 更新 img 元素的 src 属性
+    imgElement.src = imageUrl;
+}
+
 const closebtn = document.getElementById('close-icon');
 closebtn.addEventListener('click', () => {
     window.location.href = 'main.html';
@@ -78,3 +103,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error(error);
     }
 });
+
+

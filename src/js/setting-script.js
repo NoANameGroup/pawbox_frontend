@@ -29,17 +29,53 @@ ChangeUser.addEventListener ("click",()=> {
 //点击确认时，给宠物改名并隐藏弹窗
 ConfirmPet.addEventListener ("click",()=> {
     const NewPetName = NewPetNameInput.value;
-    if (NewPetName) {
-        overlay.style.display = "none";
+    if (! NewPetName) {
+        alert ("请输入新的宠物名字！");
+    } else {
         NewPetNameInput.value = '';
+        const NewPN = {
+            NewPetName: NewPetName
+        }
+        fetch ('http://127.0.0.1:4523/m1/5871339-5557864-default/pet/update', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify (NewPN)
+        })
+        .then (response => response.json())
+        .then (result => {
+            if (result.success) {
+                alert ('改名成功');
+                overlay.style.display = "none";
+            } else {
+                alert ('改名失败：' + result.message);
+            }
+        })
     }
 })
 //点击确认时，改用户名并隐藏弹窗
 ConfirmUser.addEventListener ("click",()=> {
     const NewUserName = NewUserNameInput.value;
-    if (NewUserName) {
-        overlay.style.display = "none";
-        NewUserNameInput.value =  '';
+    if (! NewUserName) {
+        alert ("请输入新的用户名！");
+    } else {
+        NewUserNameInput.value = '';
+        const NewUN = {
+            NewUserName: NewUserName
+        }
+        fetch ('http://127.0.0.1:4523/m1/5871339-5557864-default/user/update', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify (NewUN)
+        })
+        .then (response => response.json())
+        .then (result => {
+            if (result.success) {
+                alert ('改名成功');
+                overlay.style.display = "none";
+            } else {
+                alert ('改名失败：' + result.message);
+            }
+        })
     }
 })
 //点击遮罩层时隐藏弹窗

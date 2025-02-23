@@ -56,20 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
             alert ("请输入邮箱和密码！");
             return;
         }
-        const userdata = {
-            email: email,
-            password: password
-        }
-    
         
         try {
             // 发送 AJAX 请求到后端注册接口
-            const response = await fetch('http://localhost:8088/user/login', {
+            const response = await fetch('http://eqmaster.redamancyxun.fun:8088/user/login?email='+email+'&password=' + password, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify (userdata)
             });
     
             console.log("请求发出");
@@ -91,12 +85,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(response.headers);
                 // console.log(response.headers.get('session'));
                 // 从响应头中提取令牌（如果后端返回了令牌）
-                const token = data.data.sessionId;
+                const token = data.result.sessionId;
                 if (token) {
                     // 将令牌存储到 localStorage 或其他适当位置
                     localStorage.setItem('session', token);
                     // localStorage.setItem('avatar', data.result.portrait);
                 }
+
+                const petName = data.result.petName;
+                localStorage.setItem('petName', petName);
     
                 // 例如，重定向到首页
                 window.location.href = 'main.html';

@@ -46,12 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             // 发送 AJAX 请求到后端注册接口
-            const response = await fetch('http://localhost:8088/user/register', {
+            const response = await fetch('http://eqmaster.redamancyxun.fun:8088/user/signup?email='+email+'&password=' + password, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify (regdata)
             });
     
             console.log("请求发出");
@@ -73,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(response.headers);
                 // console.log(response.headers.get('session'));
                 // 从响应头中提取令牌（如果后端返回了令牌）
-                const token = data.data.sessionId;
+                const token = data.result.sessionId;
                 if (token) {
                     // 将令牌存储到 localStorage 或其他适当位置
                     localStorage.setItem('session', token);

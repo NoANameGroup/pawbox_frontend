@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             // 发送 AJAX 请求到后端注册接口
-            const response = await fetch('http://localhost:8088/pet/adopt?petName=' + name, {
+            const response = await fetch('http://eqmaster.redamancyxun.fun:8088/user/adoptPet?petName=' + name, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -89,6 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 //     localStorage.setItem('session', token);
                 //     localStorage.setItem('avatar', data.result.portrait);
                 // }
+
+                const petName = data.result.petName;
+                localStorage.setItem('petName', petName);
     
                 // 例如，重定向到首页
                 window.location.href = 'main.html';

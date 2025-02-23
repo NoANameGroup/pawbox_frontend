@@ -44,13 +44,15 @@ ConfirmPet.addEventListener ("click",()=> {
     })
     .then (response => response.json())
     .then (result => {
-        if (result.success) {
-            alert ('改名成功');
+        if (result.code === 200) {
+            // 操作成功
+            alert('改名成功！');
+            overlay.style.display = "none";
         } else {
-            alert ('改名失败：' + result.message);
+            // 操作失败
+            alert('改名失败：' + result.message);
         }
     })
-    overlay.style.display = "none";
 })
 //点击确认时，改用户名并隐藏弹窗
 ConfirmUser.addEventListener ("click",()=> {
@@ -70,13 +72,15 @@ ConfirmUser.addEventListener ("click",()=> {
     })
     .then (response => response.json())
     .then (result => {
-        if (result.success) {
-            alert ('改名成功');
+        if (result.code === 200) {
+            // 操作成功
+            alert('改名成功！');
+            overlay.style.display = "none";
         } else {
-            alert ('改名失败：' + result.message);
+            // 操作失败
+            alert('改名失败：' + result.message);
         }
     })
-    overlay.style.display = "none";
 })
 //点击遮罩层时隐藏弹窗
 overlay.addEventListener ("click",()=>{

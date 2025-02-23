@@ -5,7 +5,7 @@ closebtn.addEventListener('click', () => {
 
 // document.addEventListener('DOMContentLoaded', async () => {
 //     try {
-//         const response = await fetch('http://eqmaster.redamancyxun.fun:8088/pet/get/' + , {
+//         const response = await fetch('http://localhost:8088/pet/get/' + , {
 //             method: 'GET',
 //             headers: {
 //                 'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ closebtn.addEventListener('click', () => {
 
 // document.addEventListener('DOMContentLoaded', async () => {
 //     try {
-//         const response = await fetch('http://eqmaster.redamancyxun.fun:8088/box/get/ {boxId}', {
+//         const response = await fetch('http://localhost:8088/box/get/ {boxId}', {
 //             method: 'GET',
 //             headers: {
 //                 'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const image = document.getElementById('inputcontent-image').src;
 document.getElementById('send-button').addEventListener('click', async event => {
     try {
         // 发送 AJAX 请求到后端登录接口
-        const response = await fetch('http://eqmaster.redamancyxun.fun:8088/box/send', {
+        const response = await fetch('http://localhost:8088/box/send', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -49,7 +49,7 @@ closebtn.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://eqmaster.redamancyxun.fun:8088/pet/get/{petId}', {
+        const response = await fetch('http://localhost:8088/pet/get/{petId}', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://eqmaster.redamancyxun.fun:8088/box/get/{boxId}', {
+        const response = await fetch('http://localhost:8088/box/get/{boxId}', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

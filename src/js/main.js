@@ -20,7 +20,7 @@ function addNavigation(elementId, targetPage) {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://eqmaster.redamancyxun.fun:8088/pet/get/{petId}', {
+        const response = await fetch('http://localhost:8088/pet/get/{petId}', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

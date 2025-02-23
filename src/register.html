@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册新账号</title>
     <link rel="stylesheet" href="css/register-style.css">
+    <script src="js/register-script.js"></script>
 </head>
 <body>
     <div class="background">
         <div class="reg-word">注册新账号！</div>
         <div class="bg0">
             <div class="bg1">
+                <form id="registerForm" action="/register" method="post">
                 <div class="user-tip">
                     <img src="image/user1.png" class="user-pic">
                     <div class="user-word">用户名</div>
                 </div>
-                <input type="text" class="user-input" placeholder="请输入用户名" id="username" cursor="text" maxlength="16">
+                <input type="text" class="user-input" placeholder="请输入用户名" id="username" cursor="text" maxlength=12 name="username" required>
                 <hr>
                 <div class="mail">
                     <div class="mail-tip">
                         <img src="image/mail-send-envelope.png" class="mail-pic">
                         <div class="mail-word">邮箱</div>
                     </div>
-                    <input type="text" class="mail-input" placeholder="请输入邮箱" id="email" cursor="text">
+                    <input type="email" class="mail-input" placeholder="请输入邮箱" id="mail" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" 
+                    title="请输入有效的电子邮件地址，例如：example@example.com" name="telephone" required>
                 </div>
                 <hr>
                 <div class="password">
@@ -30,14 +33,14 @@
                         <img src="image/pw-key.png" class="password-pic">
                         <div class="password-word">密码</div>
                     </div>
-                    <input type="text" class="password-input" placeholder="请输入密码" id="password" cursor="text" maxlength="20">
+                    <input type="password" class="password-input" placeholder="请输入密码" id="password" cursor="text" minlength=8 maxlength=24 name="password" required>
                 </div>
                 <hr>
-                <div class="reg-button" id="register">注册</div>
-                <div class="return" id="login">已有账号？去登录</div>
+                <button type="submit" class="reg-button" id="register">注册</div>
+                <div onclick="window.location.href='login.html'" class="return" id="login">已有账号？去登录</div>
+            </form>
             </div>
         </div>
     </div>
-    <script src="js/register-script.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             // 发送 AJAX 请求到后端注册接口
-            const response = await fetch('http://eqmaster.redamancyxun.fun:8088/user/adoptPet?petName=' + name, {
+            const response = await fetch('https://eqmaster.redamancyxun.fun:8088/user/adoptPet?petName=' + name, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

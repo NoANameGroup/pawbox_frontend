@@ -59,7 +59,7 @@ ConfirmPet.addEventListener ("click",()=> {
     // const petdata = {
     //     name: NewPetName
     // }
-    fetch ('http://eqmaster.redamancyxun.fun:8088/user/updatePetName?petName=' + NewPetName, {
+    fetch ('https://eqmaster.redamancyxun.fun:8088/user/updatePetName?petName=' + NewPetName, {
         method: 'POST',
         headers: {'Content-Type': 'application/json',
             'session': token
@@ -90,7 +90,7 @@ ConfirmUser.addEventListener ("click",()=> {
     const userdata = {
         username: NewUserName
     }
-    fetch ('http://eqmaster.redamancyxun.fun:8088/user/updateUserInfo?username=' + NewUserName, {
+    fetch ('https://eqmaster.redamancyxun.fun:8088/user/updateUserInfo?username=' + NewUserName, {
         method: 'POST',
         headers: {'Content-Type': 'application/json',
             'session': token

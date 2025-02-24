@@ -71,7 +71,7 @@ document.getElementById('name-text').innerText = nnname;
 
 // document.addEventListener('DOMContentLoaded', async () => {
 //     try {
-//         const response = await fetch('http://localhost:8088/pet/get/{petId}', {
+//         const response = await fetch('https://localhost:8088/pet/get/{petId}', {
 //             method: 'GET',
 //             headers: {
 //                 'Content-Type': 'application/json',
@@ -99,7 +99,7 @@ document.getElementById('name-text').innerText = nnname;
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://eqmaster.redamancyxun.fun:8088/box/receiveBox', {
+        const response = await fetch('https://eqmaster.redamancyxun.fun:8088/box/receiveBox', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

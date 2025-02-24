@@ -68,7 +68,7 @@ document.getElementById('name-text').innerText = nnname;
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://eqmaster.redamancyxun.fun:8088/user/getUserInfo', {
+        const response = await fetch('https://eqmaster.redamancyxun.fun:8088/user/getUserInfo', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

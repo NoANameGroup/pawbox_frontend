@@ -101,7 +101,7 @@ document.getElementById('send-button').addEventListener('click', async event => 
 
     try {
         // 发送 AJAX 请求到后端登录接口
-        const response = await fetch('http://eqmaster.redamancyxun.fun:8088/box/sendBox?imageUrl=' + 'image' + '&content=' + content, {
+        const response = await fetch('https://eqmaster.redamancyxun.fun:8088/box/sendBox?imageUrl=' + 'image' + '&content=' + content, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

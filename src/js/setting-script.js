@@ -10,6 +10,28 @@ const ModalUser = document.getElementById ("modal-user");
 const QuitLogin = document.getElementById ("quit-login");
 const BackToMain = document.getElementById ("back-to-main");
 
+// 从 localStorage 中获取 session 令牌
+const token = localStorage.getItem('session');
+
+// 检查令牌是否存在
+if (token) {
+    console.log('获取到的令牌:', token);
+    // 在这里可以使用令牌执行其他操作，例如设置请求头
+} else {
+    console.log('没有找到令牌');
+}
+// // 从 localStorage 中获取 session 令牌
+// const nnname = localStorage.getItem('petName');
+
+// // 检查令牌是否存在
+// if (nnname) {
+//     console.log('获取到:', nnname);
+//     // 在这里可以使用令牌执行其他操作，例如设置请求头
+// } else {
+//     console.log('没有找到');
+// }
+// document.getElementById('name-text').innerText = nnname;
+
 //点击左上角箭头，返回主页
 BackToMain.addEventListener('click', () => {
     window.location.href = 'main.html';
@@ -34,20 +56,23 @@ ConfirmPet.addEventListener ("click",()=> {
         return ;
     } 
     NewPetNameInput.value = '';
-    const petdata = {
-        name: NewPetName
-    }
-    fetch ('http://localhost:8088/pet/update', {
+    // const petdata = {
+    //     name: NewPetName
+    // }
+    fetch ('https://eqmaster.redamancyxun.fun:8088/user/updatePetName?petName=' + NewPetName, {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify (petdata)
+        headers: {'Content-Type': 'application/json',
+            'session': token
+        },
     })
     .then (response => response.json())
     .then (result => {
-        if (result.code === 200) {
+        if (result.code === 0) {
             // 操作成功
             alert('改名成功！');
             overlay.style.display = "none";
+
+            localStorage.setItem('petName', NewPetName);
         } else {
             // 操作失败
             alert('改名失败：' + result.message);
@@ -56,7 +81,7 @@ ConfirmPet.addEventListener ("click",()=> {
 })
 //点击确认时，改用户名并隐藏弹窗
 ConfirmUser.addEventListener ("click",()=> {
-    const NewUserName = NewPetNameInput.value;
+    const NewUserName = NewUserNameInput.value;
     if (! NewUserName) {
         alert ("请输入新的用户名！");
         return ;
@@ -65,14 +90,16 @@ ConfirmUser.addEventListener ("click",()=> {
     const userdata = {
         username: NewUserName
     }
-    fetch ('http://localhost:8088/user/update', {
+    fetch ('https://eqmaster.redamancyxun.fun:8088/user/updateUserInfo?username=' + NewUserName, {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
+        headers: {'Content-Type': 'application/json',
+            'session': token
+        },
         body: JSON.stringify (userdata)
     })
     .then (response => response.json())
     .then (result => {
-        if (result.code === 200) {
+        if (result.code === 0) {
             // 操作成功
             alert('改名成功！');
             overlay.style.display = "none";
